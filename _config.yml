@@ -1,0 +1,74 @@
+repository: ge-techdoc/cell_therapy
+
+output: web
+topnav_title: Cell Therapy
+site_title: Cell Therapy
+company_name: GE Cell Therapy
+github_editme_path: ge-techdoc/cell_therapy/blob/gh-pages/
+disqus_shortname:
+google_analytics:
+host: 127.0.0.1
+port: 4000
+exclude:
+  - .idea/
+  - .gitignore
+
+feedback_subject_line: GE Cell Therapy
+
+feedback_email: info.biosafe@ge.com
+# feedback_disable: true
+
+highlighter: rouge
+
+markdown: kramdown
+kramdown:
+ input: GFM
+ auto_ids: true
+ hard_wrap: false
+ syntax_highlighter: rouge
+
+
+collections:
+  tooltips:
+    output: false
+
+defaults:
+  -
+    scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "page"
+      comments: true
+      search: true
+      sidebar: home_sidebar
+      topnav: topnav
+  -
+    scope:
+      path: ""
+      type: "tooltips"
+    values:
+      layout: "page"
+      comments: true
+      search: true
+      tooltip: true
+
+  -
+    scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+      comments: true
+      search: true
+      sidebar: home_sidebar
+      topnav: topnav
+
+sidebars:
+- home_sidebar
+- cell_therapy_sidebar
+
+description: "GE Cell Therapy. As a medical technology division of GE Healthcare Life Sciences, we are active in the design, manufacture, and marketing of automated Cell Therapy systems. Our mission is to contribute to human health by providing enabling technologies for bio-cellular based therapies."
+
+url: ge-techdoc.github.io
+baseurl: /cell_therapy

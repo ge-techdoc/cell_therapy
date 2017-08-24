@@ -1,0 +1,26 @@
+## Topnav single links
+## if you want to list an external url, use external_url instead of url. the theme will apply a different link base.
+topnav:
+- title: Topnav
+  items:
+    - title: Sepax C-Pro
+      external_url: https://c-pro.biosafe.ch/
+    - title: Sefia
+      external_url: https://sefia.biosafe.ch/
+    - title: Biosafe
+      external_url: https://biosafe.ch/
+    - title: GE Healthcare Life Sciences
+      external_url: https://www.gelifesciences.com/
+
+#Topnav dropdowns
+topnav_dropdowns:
+- title: Topnav dropdowns
+  folders:
+    - title: GE Cell Therapy
+      folderitems:
+        - title: Home
+          url: /index.html
+        - title: GE Cell Therapy
+          url: /cell_therapy.html
+        - title: GE Cellular Therapy
+          url: /cellular_therapy.html
